@@ -87,7 +87,7 @@ public class HookImpl {
                 desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "16.7.10");
                 desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
 
-                URL url = new URL("http://hub-devcluster.testinium.io:4444/wd/hub");
+                URL url = new URL("http://172.25.1.12:4444/wd/hub");
                 appiumDriver = new IOSDriver(url, desiredCapabilities);
 
 
