@@ -69,7 +69,7 @@ public class HookImpl {
                 desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
                 desiredCapabilities.setCapability("unicodeKeyboard", false);
                 //desiredCapabilities.setCapability("resetKeyboard", true);
-                URL url = new URL("http://hub-devcluster.testinium.io:4444/wd/hub");
+                URL url = new URL("http://172.25.1.12:4444/wd/hub");
                 appiumDriver = new AndroidDriver(url, desiredCapabilities);
                 appiumDriver.hideKeyboard();
             } else {
@@ -93,7 +93,7 @@ public class HookImpl {
 
             }
         } else {
-            String hubURL = "http://hub-devcluster.testinium.io:4444/wd/hub";
+            String hubURL = "http://172.25.1.12:4444/wd/hub";
             DesiredCapabilities capabilities = new DesiredCapabilities();
 
             System.out.println("key:" + System.getenv("key"));
