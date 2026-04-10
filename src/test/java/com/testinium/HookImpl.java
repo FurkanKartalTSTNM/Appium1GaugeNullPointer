@@ -93,7 +93,7 @@ public class HookImpl {
 
             }
         } else {
-            String hubURL = "http://172.25.1.12:4444/wd/hub";
+            String hubURL = "http://host.docker.internal:4444/wd/hub";
             deasdsadad
             DesiredCapabilities capabilities = new DesiredCapabilities();
 
